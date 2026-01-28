@@ -83,13 +83,3 @@
   --header-height: 5rem;   /* 80px */
 }
 
-/* Dark mode variables */
-.dark {
-  --color-bg: var(--color-background-dark);
-  --color-text: var(--color-white);
-}
-
-.light {
-  --color-bg: var(--color-background-light);
-  --color-text: var(--color-forest-deep);
-}

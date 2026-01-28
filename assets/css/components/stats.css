@@ -17,10 +17,7 @@
   color: var(--color-forest-deep);
 }
 
-.dark .course-card-anim {
-  background-color: rgba(26, 46, 35, 0.9);
-  color: var(--color-white);
-}
+
 
 /* Hover Effects */
 .course-card-anim:hover {
