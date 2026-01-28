@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Main CSS - Arquivo Principal de Importação
+   ========================================================================== */
+
+/* Design System */
+@import url('./variables.css');
+
+/* Reset */
+@import url('./reset.css');
+
+/* Base Styles */
+@import url('./base.css');
+
+/* Components */
+@import url('./components/navbar.css');
+@import url('./components/hero.css');
+@import url('./components/stats.css');
+@import url('./components/courses.css');
+@import url('./components/about.css');
+@import url('./components/footer.css');

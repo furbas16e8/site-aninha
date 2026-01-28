@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Featured Courses - (Substitui Stats)
+   Cards animados com efeito de destaque
+   ========================================================================== */
+
+.course-card-anim {
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-forest-deep);
+}
+
+.dark .course-card-anim {
+  background-color: rgba(26, 46, 35, 0.9);
+  color: var(--color-white);
+}
+
+/* Hover Effects */
+.course-card-anim:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(15, 240, 109, 0.15);
+  border-color: rgba(15, 240, 109, 0.3);
+}
+
+/* Icon Wrapper */
+.course-card-anim__icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-md);
+  background-color: rgba(15, 240, 109, 0.1);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+  transition: all 0.3s ease;
+}
+
+.course-card-anim:hover .course-card-anim__icon-wrapper {
+  background-color: var(--color-primary);
+  color: var(--color-forest-deep);
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Title */
+.course-card-anim__title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  line-height: 1.2;
+}
+
+/* Description */
+.course-card-anim__desc {
+  font-size: var(--text-base);
+  opacity: 0.7;
+  line-height: 1.5;
+  margin-bottom: var(--space-4);
+}
+
+/* Arrow Icon */
+.course-card-anim__arrow {
+  position: absolute;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  color: var(--color-primary);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.course-card-anim:hover .course-card-anim__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}

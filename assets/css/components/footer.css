@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Footer Component - Exato do Template
+   ========================================================================== */
+
+.footer {
+  background-color: var(--color-forest-deep);
+  color: rgba(255, 255, 255, 0.6);
+  padding: var(--space-16) var(--space-6);
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: var(--space-16) var(--space-10);
+  }
+}
+
+.footer__container {
+  max-width: var(--container-max);
+  width: 100%;
+}
+
+/* Main Grid */
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Brand Column */
+.footer__brand {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .footer__brand {
+    grid-column: auto;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-white);
+  margin-bottom: var(--space-6);
+}
+
+.footer__logo-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
+}
+
+.footer__logo-text {
+  font-size: var(--text-xl);
+  font-weight: 700;
+}
+
+.footer__description {
+  font-size: var(--text-base);
+  line-height: 1.625;
+  margin-bottom: var(--space-6);
+}
+
+/* Social Links */
+.footer__social {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  background-color: rgba(15, 240, 109, 0.2);
+  color: var(--color-primary);
+}
+
+/* Link Columns */
+.footer__column-title {
+  color: var(--color-white);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footer__link {
+  font-size: var(--text-base);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+/* Newsletter Column */
+.footer__newsletter-description {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-4);
+}
+
+.footer__newsletter-form {
+  display: flex;
+}
+
+.footer__newsletter-input {
+  flex: 1;
+  height: 2.5rem;
+  padding: 0 var(--space-3);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  color: var(--color-white);
+  font-size: var(--text-xs);
+}
+
+.footer__newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__newsletter-input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--color-primary);
+}
+
+.footer__newsletter-btn {
+  height: 2.5rem;
+  padding: 0 var(--space-4);
+  background-color: var(--color-primary);
+  color: var(--color-forest-deep);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  transition: background-color var(--transition-fast);
+}
+
+.footer__newsletter-btn:hover {
+  background-color: rgba(15, 240, 109, 0.9);
+}
+
+/* Bottom Bar */
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer__copyright {
+  font-size: var(--text-xs);
+  letter-spacing: 0.025em;
+}
+
+.footer__legal {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.footer__legal-link {
+  font-size: var(--text-xs);
+  transition: color var(--transition-fast);
+}
+
+.footer__legal-link:hover {
+  color: var(--color-white);
+}

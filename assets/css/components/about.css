@@ -1,0 +1,201 @@
+/* ==========================================================================
+   About Section - Exato do Template
+   ========================================================================== */
+
+.about {
+  padding: var(--space-20) var(--space-6);
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-background-light);
+}
+
+.dark .about {
+  background-color: rgba(16, 34, 24, 0.5);
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: var(--space-20) var(--space-10);
+  }
+}
+
+.about__container {
+  max-width: var(--container-max);
+  width: 100%;
+}
+
+.about__grid {
+  display: grid;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+/* Image */
+.about__image-wrapper {
+  position: relative;
+}
+
+.about__image-container {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-2xl);
+  position: relative;
+}
+
+.about__image-tint {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary);
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info Card */
+.about__info-card {
+  position: absolute;
+  bottom: var(--space-6);
+  left: var(--space-6);
+  right: var(--space-6);
+  padding: var(--space-6);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .about__info-card {
+  background-color: rgba(26, 46, 35, 0.9);
+}
+
+.about__info-role {
+  font-size: var(--text-xs);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.about__info-name {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-forest-deep);
+}
+
+.dark .about__info-name {
+  color: var(--color-white);
+}
+
+/* Decorative Blurs */
+.about__blur-1 {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(15, 240, 109, 0.1);
+  border-radius: var(--radius-full);
+  filter: blur(2rem);
+}
+
+.about__blur-2 {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(15, 240, 109, 0.05);
+  border-radius: var(--radius-full);
+  filter: blur(3rem);
+}
+
+/* Content */
+.about__content {
+  /* No extra styles needed */
+}
+
+.about__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 900;
+  color: var(--color-forest-deep);
+  margin-bottom: var(--space-6);
+  line-height: 1.1;
+}
+
+.dark .about__title {
+  color: var(--color-white);
+}
+
+.about__description {
+  font-size: var(--text-xl);
+  line-height: 1.625;
+  color: rgba(26, 46, 35, 0.8);
+  margin-bottom: var(--space-6);
+}
+
+.dark .about__description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Features Grid */
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.about__feature {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.about__feature-icon {
+  color: var(--color-primary);
+}
+
+.about__feature-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.about__feature-description {
+  font-size: var(--text-xs);
+  opacity: 0.7;
+  margin-top: var(--space-1);
+}
+
+/* CTA Link */
+.about__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 900;
+  color: var(--color-forest-deep);
+}
+
+.dark .about__cta {
+  color: var(--color-white);
+}
+
+.about__cta-icon {
+  transition: transform var(--transition-fast);
+}
+
+.about__cta:hover .about__cta-icon {
+  transform: translateX(0.5rem);
+}

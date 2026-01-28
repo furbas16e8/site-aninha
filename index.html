@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Furbino - Engenharia Florestal</title>
+  
+  <!-- Google Fonts - Lexend -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Devicon (para ícones de redes sociais) -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="relative flex flex-col min-h-screen">
+    
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Logo -->
+        <div class="header__logo">
+          <div class="header__logo-icon">
+            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-primary);">forest</span>
+          </div>
+          <h2 class="header__logo-text">Ana Furbino</h2>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="header__nav">
+          <a class="header__nav-link" href="#">Início</a>
+          <a class="header__nav-link" href="#services">Serviços</a>
+          <a class="header__nav-link" href="#about">Sobre</a>
+          <a class="header__nav-link" href="#contact">Contato</a>
+        </nav>
+        
+        <!-- Actions -->
+        <div class="header__actions">
+          <a href="#contact" class="header__cta">Fale Comigo</a>
+          <button class="header__menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+    <main class="flex-grow">
+      
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__grid">
+            <!-- Content -->
+            <div class="hero__content">
+              <span class="hero__badge">Consultoria Ambiental Especializada</span>
+              <h1 class="hero__title">Soluções em Engenharia Florestal e Meio Ambiente</h1>
+              <p class="hero__description">
+                Especialista em Inventário Florestal, QGIS e licenciamento ambiental. Transformando dados técnicos em estratégias sustentáveis.
+              </p>
+              <div class="hero__actions">
+                <a href="#services" class="hero__btn hero__btn--primary">Ver Portfólio</a>
+                <a href="#contact" class="hero__btn hero__btn--secondary">Entre em Contato</a>
+              </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="hero__image-wrapper">
+              <div class="hero__image" style="background-image: linear-gradient(to right, #1a2e23 0%, transparent 20%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuABAK0H__Bvt-LqmcxxTWdaCNGlue-1SlSRMSel4RnpnDY1R7E_gDeEywKTrhgOMX1LUGH3QtNwHNV9nFbkGCAAKFkNbloxMQR3bsjZxBopKnEOcO5j8_Msz2vo_wRs-FPyaIdNpYHC1D8VyE3VT2OH661Z65g257MLD7IgiX0E2bVMzUWEi94tGi9KNh21wnyiAcBnqPHhlOVFWsPkN6LaYSB80ONNi3F2sJOEDH7CbFIK40GKoGqQoGqwVxDYlH4jVA0Ds_GiPn8');"></div>
+              <div class="hero__image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SERVICES / COURSES SECTION -->
+      <section class="courses" id="services">
+        <div class="courses__container">
+          <!-- Header -->
+          <div class="courses__header">
+            <div>
+              <h2 class="courses__title">Serviços e Projetos</h2>
+              <p class="courses__subtitle">Soluções técnicas avançadas para demandas complexas.</p>
+            </div>
+            <a class="courses__view-all" href="#contact">
+              Solicitar Orçamento <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+            </a>
+          </div>
+          
+          <!-- Grid -->
+          <div class="courses__grid">
+            <!-- Service 1 -->
+            <article class="course-card">
+              <div class="course-card__image" style="background-image: url('assets/img/card-1.png');">
+                <div class="course-card__image-overlay"></div>
+              </div>
+              <div class="course-card__content">
+                <div class="course-card__tags">
+                  <span class="course-card__tag">Sensoriamento</span>
+                </div>
+                <h3 class="course-card__title">Inventário Florestal e LiDAR</h3>
+                <p class="course-card__description">Processamento de nuvens de pontos (LAStools) e inventários de alta precisão.</p>
+                <div class="course-card__footer">
+                  <div class="course-card__duration">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">forest</span>
+                    Precisão
+                  </div>
+                </div>
+              </div>
+            </article>
+            
+            <!-- Service 2 -->
+            <article class="course-card">
+              <div class="course-card__image" style="background-image: url('assets/img/card-2.jpeg');">
+                <div class="course-card__image-overlay"></div>
+              </div>
+              <div class="course-card__content">
+                <div class="course-card__tags">
+                  <span class="course-card__tag">Hidrologia</span>
+                </div>
+                <h3 class="course-card__title">Modelagem Hidrológica</h3>
+                <p class="course-card__description">Análise de bacias e predição de erosão com SAGA GIS e USLE.</p>
+                <div class="course-card__footer">
+                  <div class="course-card__duration">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">water_drop</span>
+                    Análise
+                  </div>
+                </div>
+              </div>
+            </article>
+            
+            <!-- Service 3 -->
+            <article class="course-card">
+              <div class="course-card__image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80');">
+                <div class="course-card__image-overlay"></div>
+              </div>
+              <div class="course-card__content">
+                <div class="course-card__tags">
+                  <span class="course-card__tag">Geodatabase</span>
+                </div>
+                <h3 class="course-card__title">Gestão de Dados (PostGIS)</h3>
+                <p class="course-card__description">Arquitetura e gerenciamento de bancos de dados espaciais robustos.</p>
+                <div class="course-card__footer">
+                  <div class="course-card__duration">
+                    <span class="material-symbols-outlined" style="font-size: 18px;">database</span>
+                    Dados
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="about__container">
+          <div class="about__grid">
+            <!-- Image -->
+            <div class="about__image-wrapper">
+              <div class="about__image-container">
+                <div class="about__image-tint"></div>
+                <!-- Foto de Perfil Atualizada -->
+                <img class="about__image" src="assets/img/perfil.jpeg" alt="Ana Furbino">
+                <div class="about__info-card">
+                  <p class="about__info-role">Engenheira Florestal</p>
+                  <p class="about__info-name">Ana Furbino</p>
+                </div>
+              </div>
+              <div class="about__blur-1"></div>
+              <div class="about__blur-2"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="about__content">
+              <h2 class="about__title">Experiência e Dedicação ao Meio Ambiente</h2>
+              <p class="about__description">
+                Graduada em Engenharia Florestal pela UFVJM, com 6 anos de experiência prática no setor. Minha atuação foca em trazer segurança técnica e jurídica para projetos ambientais, aliando conservação e desenvolvimento sustentável.
+              </p>
+              
+              <!-- Features -->
+              <div class="about__features">
+                <div class="about__feature">
+                  <span class="material-symbols-outlined about__feature-icon">school</span>
+                  <div>
+                    <h4 class="about__feature-title">Formação Sólida</h4>
+                    <p class="about__feature-description">Universidade Federal dos Vales do Jequitinhonha e Mucuri.</p>
+                  </div>
+                </div>
+                <div class="about__feature">
+                  <span class="material-symbols-outlined about__feature-icon">workspace_premium</span>
+                  <div>
+                    <h4 class="about__feature-title">Excelência Técnica</h4>
+                    <p class="about__feature-description">Compromisso com a qualidade em cada relatório e mapa entregue.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <a href="https://www.linkedin.com/in/ana-cl%C3%A1udia-furbino-queiroz-521632b5/" target="_blank" class="about__cta">
+                Ver Perfil Profissional
+                <span class="material-symbols-outlined about__cta-icon">arrow_right_alt</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer" id="contact">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <!-- Brand -->
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <div class="footer__logo-icon">
+                <span class="material-symbols-outlined" style="font-size: 24px; color: var(--color-primary);">forest</span>
+              </div>
+              <h2 class="footer__logo-text">Ana Furbino</h2>
+            </div>
+            <p class="footer__description">
+              Soluções em engenharia florestal com responsabilidade técnica e ambiental.
+            </p>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="footer__column-title">Serviços</h4>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#">Inventário Florestal</a></li>
+              <li><a class="footer__link" href="#">Licenciamento</a></li>
+              <li><a class="footer__link" href="#">Mapas QGIS</a></li>
+              <li><a class="footer__link" href="#">Consultoria</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact -->
+          <div>
+            <h4 class="footer__column-title">Contato</h4>
+            <div class="footer__links">
+              <!-- Instagram -->
+              <a class="footer__link" href="https://www.instagram.com/eng.anafurbino" target="_blank" style="display: flex; align-items: center; gap: 8px;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px;">
+                  <!-- SVG Inline para garantir o ícone do Instagram -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: currentColor; width: 100%; height: 100%;"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </span>
+                Instagram
+              </a>
+              
+              <!-- LinkedIn -->
+              <a class="footer__link" href="https://www.linkedin.com/in/ana-cl%C3%A1udia-furbino-queiroz-521632b5/" target="_blank" style="display: flex; align-items: center; gap: 8px;">
+                <i class="devicon-linkedin-plain" style="font-size: 20px;"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          
+          <!-- Location (Placeholder) -->
+          <div>
+            <h4 class="footer__column-title">Localização</h4>
+            <p class="footer__newsletter-description">Atuação em projetos por todo o Brasil.</p>
+          </div>
+        </div>
+        
+        <!-- Bottom -->
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            Powered by <a href="https://douglasfurbino.com" target="_blank" style="text-decoration: none; color: inherit; transition: color 0.3s;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='inherit'">Douglas Furbino</a>
+          </p>
+          <div class="footer__legal">
+            <span style="font-size: var(--text-xs); opacity: 0.5;">© 2026 Ana Furbino</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <!-- JavaScript -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
